@@ -1,0 +1,123 @@
+.header-simple{
+    width: 1524px;
+    height: 60px;
+}
+.w{
+    position: relative;
+    width: 1080px;
+    height: 65px;
+    left: 50%;
+    margin-top: 15px;
+    margin-left: -540px;
+}
+
+.logo {
+    margin-top: 30px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #c60023;
+    text-decoration: none;
+}
+.user-wrap {
+    padding: 40px 0;
+    background: #e72955;
+    height: 350px;
+}
+
+
+.user-container {
+    position: relative;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    background: #fff;
+    height: 300px;
+}
+.user-container .user-title {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 5px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #666;
+}
+.user-container .user-box {
+    margin-top: 10px;
+    padding: 20px;
+}
+.user-container .user-item {
+    position: relative;
+    border: 1px solid #bdbdbd;
+    margin-bottom: 5px;
+}
+
+/* 输入框 */
+.user-container .user-item input{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    outline: medium;
+    border: hidden;
+    position: relative;
+    width: 300px;
+}
+.user-container .user-error{
+    height: 20px;
+}
+.user-container .pass-error{
+    height: 20px;
+}
+.user-container .user-error p{
+    color: red;
+    display: none;
+}
+.user-container .pass-error p{
+    color: red;
+    display: none;
+}
+/*.user-container .user-item .fa-user::before{*/
+    /*position: relative;*/
+    /*content: url(../images/user.png);*/
+/*}*/
+/*.user-container .user-item .fa-lock::before{*/
+    /*content: url(../images/pass.png);*/
+/*}*/
+.user-container .user-item .user-context{
+    position: relative;
+    height: 35px;
+}
+.user-container .user-error .error-msg,.user-container .pass-error .error-msg{
+    margin-bottom: 5px;
+}
+.user-container .login-button {
+    display: block;
+    padding: 6px 0;
+    width: 100%;
+    text-align: center;
+    background: #e4393c;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.user-container .link-item .link{
+    float: right;
+    padding: 15px 0 0 10px;
+    text-decoration: none;
+    color: #666;
+    cursor: pointer;
+
+}
+
+.footer .copyright{
+    text-align: center;
+    color: #666;
+}
+
+
+
+
