@@ -8,7 +8,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 
 /**
@@ -19,13 +21,25 @@ import javax.servlet.http.HttpSession;
 @RequestMapping("/manage/user")
 public class UserManageController {
 
-    private IUserService iUserService;
+    @Resource(name = "iUserService")
+//    @Autowired
+    private IUserService iUserService1;
+
+
+//    public IUserService getIUserService() {
+//        return iUserService;
+//    }
+
+//    public void setIUserService(IUserService iUserService) {
+//        this.iUserService = iUserService;
+//    }
+
 
 
     @RequestMapping(value="login.do",method = RequestMethod.POST)
     @ResponseBody
     public ServerResponse<User> login(String username, String password, HttpSession session){
-        ServerResponse<User> response = iUserService.login(username,password);
+        ServerResponse<User> response = iUserService1.login(username,password);
         if(response.isSuccess()){
             User user = response.getData();
             if(user.getRole() == Const.Role.ROLE_ADMIN){

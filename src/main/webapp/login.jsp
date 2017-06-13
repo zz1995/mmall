@@ -37,7 +37,7 @@
                 <i class="err-icon"></i>
                 <p class="error-msg">请输入密码!</p>
             </div>
-            <a class="login-button" id="submit" href="user/login.do">登录</a>
+            <input type="submit" class="login-button" id="submit" >登录</input>
             <div class="link-item" >
                 <a class="link register" href="register.jsp">免费注册</a>
                 <a class="link pass-forget" href="pass-reset.jsp">忘记密码</a>
